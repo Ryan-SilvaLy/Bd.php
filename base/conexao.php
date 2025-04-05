@@ -1,9 +1,9 @@
 <?php
 // Configurações do banco de dados
-$host = 'localhost';    // endereço do servidor MySQL
-$dbname = 'formulario_php';    // nome do banco de dados
-$username = 'root';     // usuário do MySQL
-$password = '';         // senha do MySQL
+$host = 'localhost';    // Endereço do servidor MySQL
+$dbname = 'formulario_php';    // Nome do banco de dados
+$username = 'root';     // Usuário do MySQL
+$password = '';         // Senha do MySQL
 
 try {
     // Conectar ao banco de dados
@@ -24,20 +24,8 @@ $stmt = $pdo->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/avaliacao/static/tabela.css">
     <title>Tabela de Funcionários</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-    </style>
 </head>
 <body>
     <h1>Tabela de Funcionários</h1>
